@@ -90,7 +90,7 @@ ul#menu {
 ページ説明文
 ============================================*/
 #intro h1 {
-	width:860px; height:auto;	/*トップページのヘッダ画像の表示サイズを指定*/
+	width:900px; height:auto;	/*トップページのヘッダ画像の表示サイズを指定*/
     margin:5px 40px 5px 40px;	/*マージン*/
     background-color: lemonchiffon;
     border-top: 3px solid peachpuff;
@@ -137,15 +137,20 @@ ul#submenu {
 ============================================*/
 div#mainImg {
     clear: both;
-	width:650px; height:700px; 	/*メインメニュー部分の幅と高さ*/
+	width:650px; 	/*メインメニュー部分の幅と高さ*/
     margin:30px 30px 30px 30px; 	/*上下マージン0px、左右マージン20px*/
     padding: 0px;
     background-color: snow;
     border-top: 3px solid peachpuff;
     display: inline-block;
+    overflow: hidden;
 }
 #mainImg h1 {
-    color: gray;
+    color: hotpink;
+}
+#mainImg a img {
+    width: 250px;
+    height: auto;
 }
 #mainImg h2 {
     margin-left: 30px;

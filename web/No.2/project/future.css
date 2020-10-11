@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/*============================================
+メイン
+============================================*/
+#container {
+	width:940px; 	/*メインメニュー部分の幅と高さ*/
+    margin:30px 30px 30px 30px; 	/*上下マージン0px、左右マージン20px*/
+    padding: 10px 0 0 20px;
+    background-color: snow;
+	display: inline-block;
+	overflow: hidden;
+}
+#container h2 {
+	border-left: 2px solid orange;
+	border-bottom: 2px solid orange;
+	margin-bottom: 20px;
+	padding-left: 5px;
+}
+#container h3 {
+	clear: both;
+	padding: 0.5em 1em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+	border-radius: 10px;/*角の丸み*/
+	margin: 20px 20px 20px 20px;
+}
+div.imgGroup {
+	overflow: hidden;
+}
+/*============================================
+サブメニュー
+============================================*/
+#ryokan {
+	background-color: mintcream;
+}
+#ryokan1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-bottom: 5px;
+}
+#ryokanImg {
+	text-align: center;
+}
+/*============================================
+サブメニュー
+============================================*/
+#gym {
+	background-color: mintcream;
+}
+#gym1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-bottom: 5px;
+}
+#gymImg {
+	text-align: center;
+}
+/*============================================
+サブメニュー
+============================================*/
+#movie {
+	background-color: mintcream;
+}
+#movie1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-bottom: 5px;
+}
+#movieImg {
+	text-align: center;
+}
+/*============================================
+サブメニュー
+============================================*/
+#neko {
+	background-color: mintcream;
+}
+#neko1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-bottom: 5px;
+}
+#nekoImg {
+	text-align: center;
+}
+/*============================================
+サブメニュー
+============================================*/
+#sky {
+	background-color: mintcream;
+}
+#sky1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-bottom: 5px;
+}
+#skyImg {
+	text-align: center;
+}
+/*============================================
+サブメニュー
+============================================*/
+#tokyo {
+	background-color: mintcream;
+}
+#tokyo1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-bottom: 5px;
+}
+#tokyoImg {
+	text-align: center;
+}
+/*============================================
+サブメニュー
+============================================*/
+#ryokan {
+	background-color: mintcream;
+}
+#ryokan1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-bottom: 5px;
+}
+#ryokanImg {
+	text-align: center;
+}
+/*============================================
+フッタ
+============================================*/
+div#footer {
+	clear:both;					/*フロート配置をクリアする*/
+	height:40px;				/*高さの指定*/
+	padding:10px 0px 0px 0px;	/*パディング*/
+	font-size:x-small;			/*フォントサイズを小さくする*/
+	text-align:center;			/*センタリング*/
+}
+

@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+/*============================================
+メイン
+============================================*/
+#container {
+	width:940px; 	/*メインメニュー部分の幅と高さ*/
+    margin:30px 30px 30px 30px; 	/*上下マージン0px、左右マージン20px*/
+    padding: 10px 0 0 20px;
+    background-color: snow;
+	display: inline-block;
+	overflow: hidden;
+}
+#container h2 {
+	border-left: 2px solid orange;
+	border-bottom: 2px solid orange;
+	margin-bottom: 20px;
+	padding-left: 5px;
+}
+#container h3 {
+	clear: both;
+	padding: 0.5em 1em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+	border-radius: 10px;/*角の丸み*/
+	margin: 20px 20px 20px 20px;
+}
+div.imgGroup {
+	overflow: hidden;
+}
+/*============================================
+サブメニュー
+============================================*/
+#siranoe {
+	background-color: mintcream;
+}
+#siranoe1 {
+	width:300px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+}
+#siranoe2 {
+	width:250px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#siranoe3 {
+	width:600px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+}
+/*============================================
+サブメニュー
+============================================*/
+#itozu {
+	background-color: mintcream;
+}
+#itozu1 {
+	width:300px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+}
+#itozu2 {
+	width:600px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#itozu3 {
+	width:600px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-right: 5px;
+}
+#itozu4 {
+	width:300px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+}
+/*============================================
+サブメニュー
+============================================*/
+#tobu {
+	background-color: mintcream;
+}
+#tobu1 {
+	width:300px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+}
+#tobu2 {
+	width:600px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#tobu3 {
+	width:600px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+}
+/*============================================
+サブメニュー
+============================================*/
+#desney {
+	background-color: mintcream;
+}
+#desney1 {
+	width:300px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+}
+#desney2 {
+	width:300px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-right: 5px;
+}
+#desney3 {
+	width:300px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#desney4 {
+	width:910px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+}
+/*============================================
+サブメニュー
+============================================*/
+#tokyo {
+	background-color: mintcream;
+}
+#tokyo1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#tokyo2 {
+	width:300px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#tokyo3 {
+	width:200px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#tokyo4 {
+	width:910px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+}
+/*============================================
+サブメニュー
+============================================*/
+#oita {
+	background-color: mintcream;
+}
+#oita1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#oita2 {
+	width:300px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#oita3 {
+	width:200px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-right: 5px;
+}
+#oita4 {
+	width:100px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#oita5 {
+	width:300px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#oita6 {
+	width:140px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+}
+/*============================================
+サブメニュー
+============================================*/
+#omuta {
+	background-color: mintcream;
+}
+#omuta1 {
+	width:910px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#omuta2 {
+	width:450px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+#omuta3 {
+	width:450px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-right: 5px;
+}
+#omuta4 {
+	width:910px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+/*============================================
+サブメニュー
+============================================*/
+#yuhuin {
+	background-color: mintcream;
+}
+#yuhuin1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#yuhuin2 {
+	width:450px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+#yuhuin3 {
+	width:350px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-right: 5px;
+}
+/*============================================
+サブメニュー
+============================================*/
+#spewa {
+	background-color: mintcream;
+}
+#spewa1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#spewa2 {
+	width:300px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+/*============================================
+サブメニュー
+============================================*/
+#other {
+	background-color: mintcream;
+}
+#other1 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#other2 {
+	width:300px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+#other3 {
+	width:300px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#other4 {
+	width:200px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+#other5 {
+	width:600px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#other6 {
+	width:300px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+#other7 {
+	width:300px;height: auto;			/*幅の指定*/
+	margin-right: 5px;
+    float:left;					/*カラムを左寄せにする*/
+    display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+}
+#other8 {
+	width:300px;height: auto;			/*幅の指定*/
+    float:left;					/*カラムを左寄せにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+/*============================================
+サイド
+============================================*/
+div#side {
+    float: right;
+}
+#side img {
+    width:200px;
+    display: flex;
+    height: auto;
+    margin: 30px 50px 30px 0;
+}
+
+/*============================================
+フッタ
+============================================*/
+div#footer {
+	clear:both;					/*フロート配置をクリアする*/
+	height:40px;				/*高さの指定*/
+	padding:10px 0px 0px 0px;	/*パディング*/
+	font-size:x-small;			/*フォントサイズを小さくする*/
+	text-align:center;			/*センタリング*/
+}
+

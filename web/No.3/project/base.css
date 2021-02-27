@@ -1,0 +1,30 @@
+html,body {
+    width: 100vw;
+    height: 100vh;
+    position:  relative;            /* 位置指定 */
+
+}
+
+#pagebody{
+    overflow:hidden;
+    height: 100vh;
+    position:  relative;            /* 位置指定 */
+
+}
+#testtest  {
+    display:  block;                /* ブロック要素にする */
+    margin: 0 auto;                 /* 要素中央揃え */
+    position:  relative;            /* 位置指定 */
+    animation: anime1 2s ease 0s;      /* アニメーション指定 */
+}
+ 
+@keyframes anime1 {
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        top: 100px;                  /* 位置指定 */
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        top: 0;                     /* 位置指定 */
+    }
+}

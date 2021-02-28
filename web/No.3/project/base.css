@@ -11,11 +11,14 @@ html,body {
     position:  relative;            /* 位置指定 */
 
 }
-#testtest  {
+#topImageOrange  {
     display:  block;                /* ブロック要素にする */
     margin: 0 auto;                 /* 要素中央揃え */
     position:  relative;            /* 位置指定 */
     animation: anime1 2s ease 0s;      /* アニメーション指定 */
+    width: 100vw;
+    height: 100vh;
+
 }
  
 @keyframes anime1 {

@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(){
-    var el = document.getElementById('testtest');
+    //var el = document.getElementById('topImageOrange');
+    var el = document.getElementsByClassName('animeTest');
 
-    el.addEventListener('animationend',function() {
-        alert('test');
+
+    el[0].addEventListener('animationend',function() {
+        el[0].remove();
+        //alert('test');
     });
 });

@@ -11,16 +11,94 @@ html,body {
     position:  relative;            /* 位置指定 */
 
 }
+.firstImg {/*親div*/
+    position: relative;/*相対配置*/
+    animation: anime1 2s ease 0s;      /* アニメーション指定 */
+}  
+.firstImg p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;  
+    color: white;/*文字は白に*/
+    font-weight: bold; /*太字に*/
+    font-size: 2em;/*サイズ2倍*/
+    font-family :Quicksand, sans-serif;/*Google Font*/
+    z-index: 20;
+}
 #topImageOrange  {
     display:  block;                /* ブロック要素にする */
     margin: 0 auto;                 /* 要素中央揃え */
     position:  relative;            /* 位置指定 */
-    animation: anime1 2s ease 0s;      /* アニメーション指定 */
     width: 100vw;
     height: 100vh;
-
+    z-index: 10;
 }
- 
+img[name=doAnimeMizuiro] {
+    display:  block;                /* ブロック要素にする */
+    margin: 0 auto;                 /* 要素中央揃え */
+    position:  absolute;            /* 位置指定 */
+    animation: anime2 2s ease 0s;      /* アニメーション指定 */
+    width: 100vw;
+    height: 100vh;
+    z-index: 30;
+    animation-fill-mode: forwards;
+} 
+img[name=doAnimeGreen] {
+    display:  block;                /* ブロック要素にする */
+    margin: 0 auto;                 /* 要素中央揃え */
+    position:  absolute;            /* 位置指定 */
+    animation: anime2 2s ease 0s;      /* アニメーション指定 */
+    width: 100vw;
+    height: 100vh;
+    z-index: 40;
+    animation-fill-mode: forwards;
+} 
+img[name=doAnimeBlack] {
+    display:  block;                /* ブロック要素にする */
+    margin: 0 auto;                 /* 要素中央揃え */
+    position:  absolute;            /* 位置指定 */
+    animation: anime3 2s ease 0s;      /* アニメーション指定 */
+    width: 25vw;
+    height: 10vh;
+    z-index: 50;
+    animation-fill-mode: forwards;
+} 
+img[name=doAnimeRed] {
+    display:  block;                /* ブロック要素にする */
+    margin: 0 auto;                 /* 要素中央揃え */
+    position:  absolute;            /* 位置指定 */
+    animation: anime4 2s ease 0s;      /* アニメーション指定 */
+    width: 25vw;
+    height: 10vh;
+    z-index: 60;
+    animation-fill-mode: forwards;
+} 
+img[name=doAnimeWhite] {
+    display:  block;                /* ブロック要素にする */
+    margin: 0 auto;                 /* 要素中央揃え */
+    position:  absolute;            /* 位置指定 */
+    animation: anime5 2s ease 0s;      /* アニメーション指定 */
+    width: 25vw;
+    height: 10vh;
+    z-index: 50;
+    animation-fill-mode: forwards;
+} 
+img[name=doAnimeYerrow] {
+    display:  block;                /* ブロック要素にする */
+    margin: 0 auto;                 /* 要素中央揃え */
+    position:  absolute;            /* 位置指定 */
+    animation: anime6 2s ease 0s;      /* アニメーション指定 */
+    width: 25vw;
+    height: 10vh;
+    z-index: 50;
+    animation-fill-mode: forwards;
+} 
+
 @keyframes anime1 {
     0% {
         opacity:  0;                /* 透明度指定 */
@@ -29,5 +107,63 @@ html,body {
     100% {
         opacity:  1;                /* 透明度指定 */
         top: 0;                     /* 位置指定 */
+    }
+}
+@keyframes anime2 {
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        top: -100%;                  /* 位置指定 */
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        top: -70%;                     /* 位置指定 */
+    }
+}
+@keyframes anime3 {
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        left: -25%;                  /* 位置指定 */
+        top: 0;
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        left: 0%;                     /* 位置指定 */
+        top: 0;
+    }
+}
+@keyframes anime4 {
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        left: 0%;                  /* 位置指定 */
+        top: 0;
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        left: 25%;                     /* 位置指定 */
+        top: 0;
+    }
+}
+@keyframes anime5 {
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        left: 100%;                  /* 位置指定 */
+        top: 0;
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        left: 75%;                     /* 位置指定 */
+        top: 0;
+    }
+}
+@keyframes anime6 {
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        left: 75%;                  /* 位置指定 */
+        top: 0;
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        left: 50%;                     /* 位置指定 */
+        top: 0;
     }
 }

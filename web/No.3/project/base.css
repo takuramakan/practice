@@ -58,6 +58,10 @@ img[name=doAnimeGreen] {
     z-index: 40;
     animation-fill-mode: forwards;
 } 
+.gnav {
+    height: 10vh;
+    width: 100vw;
+}
 img[name=doAnimeBlack] {
     display:  block;                /* ブロック要素にする */
     margin: 0 auto;                 /* 要素中央揃え */

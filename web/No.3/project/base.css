@@ -58,50 +58,128 @@ img[name=doAnimeGreen] {
     z-index: 40;
     animation-fill-mode: forwards;
 } 
+#topImageBlack {
+    width: 25vw;
+    height: 10vh;
+}
+#topImageRed {
+    width: 25vw;
+    height: 10vh;
+}
+#topImageWhite {
+    width: 25vw;
+    height: 10vh;
+}
+#topImageYerrow {
+    width: 25vw;
+    height: 10vh;
+}
 .gnav {
+    display: flex;
     height: 10vh;
     width: 100vw;
+    margin: 0 auto;
 }
-img[name=doAnimeBlack] {
+.gnav > li {
+    width: 25vw;
+}
+.gnav li{
+    position: relative;
+    list-style: none;
+}
+.gnav li img{
+    display: block;
+    height: 10vh;
+    width: 25vw;
+}
+.gnav li ul {
+    padding: 0;
+    height: 0;
+}
+.gnav li li {
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.gnav li li img {
+    border-top: 1px solid #eee;
+    width: 25vw;
+}
+.gnav li:hover > ul > li {
+    height: 10vh;
+    overflow: visible;
+}
+.gnav li li:hover img {
+    filter: sepia(100%);
+} 
+.gnav li li ul li:hover img {
+    filter: hue-rotate(90deg);
+} 
+/*孫階層以降共通*/
+.gnav li ul li ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*一番右のメニュー*/
+.gnav > li:nth-child(4) ul li ul {
+    left: -100%;
+}
+
+.pWhite{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    color: white;
+    font-weight: bold; /*太字に*/
+
+}
+.pBlack{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    color: black;
+    font-weight: bold; /*太字に*/
+
+}
+li[name=doAnimeBlack] {
     display:  block;                /* ブロック要素にする */
     margin: 0 auto;                 /* 要素中央揃え */
     position:  absolute;            /* 位置指定 */
     animation: anime3 2s ease 0s;      /* アニメーション指定 */
-    width: 25vw;
-    height: 10vh;
-    z-index: 50;
     animation-fill-mode: forwards;
+    z-index: 50;
 } 
-img[name=doAnimeRed] {
+
+li[name=doAnimeRed] {
     display:  block;                /* ブロック要素にする */
     margin: 0 auto;                 /* 要素中央揃え */
     position:  absolute;            /* 位置指定 */
     animation: anime4 2s ease 0s;      /* アニメーション指定 */
-    width: 25vw;
-    height: 10vh;
     z-index: 60;
     animation-fill-mode: forwards;
-} 
-img[name=doAnimeWhite] {
+}
+
+li[name=doAnimeWhite] {
     display:  block;                /* ブロック要素にする */
     margin: 0 auto;                 /* 要素中央揃え */
     position:  absolute;            /* 位置指定 */
     animation: anime5 2s ease 0s;      /* アニメーション指定 */
-    width: 25vw;
-    height: 10vh;
     z-index: 50;
     animation-fill-mode: forwards;
 } 
-img[name=doAnimeYerrow] {
+
+li[name=doAnimeYerrow] {
     display:  block;                /* ブロック要素にする */
     margin: 0 auto;                 /* 要素中央揃え */
     position:  absolute;            /* 位置指定 */
     animation: anime6 2s ease 0s;      /* アニメーション指定 */
-    width: 25vw;
-    height: 10vh;
     z-index: 50;
     animation-fill-mode: forwards;
 } 
+
 
 @keyframes anime1 {
     0% {

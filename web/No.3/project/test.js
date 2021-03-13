@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var greenEl = document.getElementById("topImageGreen");
     greenEl.addEventListener('animationend',function() {
-        var name = $('img[name="notAnimeBlack"]').attr('name', 'doAnimeBlack');;
-        var name = $('img[name="notAnimeWhite"]').attr('name', 'doAnimeWhite');;
+        var name = $('li[name="notAnimeBlack"]').attr('name', 'doAnimeBlack');;
+        var name = $('li[name="notAnimeWhite"]').attr('name', 'doAnimeWhite');;
     });
 
-    var blackEl = document.getElementById("topImageBlack");
+    var blackEl = document.getElementById("topBlack");
     blackEl.addEventListener('animationend',function() {
-        var name = $('img[name="notAnimeRed"]').attr('name', 'doAnimeRed');;
-        var name = $('img[name="notAnimeYerrow"]').attr('name', 'doAnimeYerrow');;
+        var name = $('li[name="notAnimeRed"]').attr('name', 'doAnimeRed');;
+        var name = $('li[name="notAnimeYerrow"]').attr('name', 'doAnimeYerrow');;
     });
 });

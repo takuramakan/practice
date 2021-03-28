@@ -24,6 +24,22 @@ document.addEventListener("DOMContentLoaded", function(){
         var name = $('li[name="notAnimeRed"]').attr('name', 'doAnimeRed');;
         var name = $('li[name="notAnimeYerrow"]').attr('name', 'doAnimeYerrow');;
     });
+
+    $("#yajirusi").click(function() {
+        $("#hanbagamenuContainer").hide();
+        $("#top").attr('class','shrink');
+        $("#top").on('transitionend webkitTransitionEnd',function(){
+            // CSSのtransitionプロパティで設定したものが終了した時に実行する内容
+            $("#topImageContainer").attr('class','pageLeft');;
+        });
+            //$("#topImageContainer").attr('class','pageLeft');;
+    });
+
+    // transitionプロパティの場合
+    $("#top").on('transitionend webkitTransitionEnd',function(){
+        // CSSのtransitionプロパティで設定したものが終了した時に実行する内容
+        //$("#topImageContainer").attr('class','pageLeft');;
+    });
 });
 $(function() {
     //マウスダウンの位置

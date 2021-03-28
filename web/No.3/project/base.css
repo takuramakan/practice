@@ -10,7 +10,6 @@ html,body {
     overflow:hidden;
     height: 100vh;
     position:  relative;            /* 位置指定 */
-
 }
 .firstImg {/*親div*/
     position: relative;/*相対配置*/
@@ -20,8 +19,8 @@ html,body {
     display:  block;                /* ブロック要素にする */
     margin: 0 auto;                 /* 要素中央揃え */
     position:  relative;            /* 位置指定 */
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 10;
 }
 .firstImg p {
@@ -38,6 +37,21 @@ html,body {
     font-size: 2em;/*サイズ2倍*/
     font-family :Quicksand, sans-serif;/*Google Font*/
     z-index: 20;
+}
+#yajirusi {
+    position: absolute;
+    top: 45%;
+    left: 90%;
+    margin:0;
+    padding:0;  
+    z-index: 20;
+    Border-radius: 50%;
+    width: 5%;
+    transition-duration: 0.5s;
+}
+#yajirusi:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 0.5s;
 }
 #hanbagaContainer {
     position: absolute;
@@ -72,14 +86,17 @@ html,body {
     left: 100%;
     top: 0;
     z-index: 70;
-    width: 30vw;
+    width: 30%;
     transition:1s all;
+}
+#secondImg{
+    height: 10%;
 }
 #test {
     position: relative;
 }
 #hanbagamenu{
-    height: 100vh;
+    height: 100%;
 }
 #test p{
     position: absolute;
@@ -102,8 +119,8 @@ img[name=doAnimeMizuiro] {
     margin: 0 auto;                 /* 要素中央揃え */
     position:  absolute;            /* 位置指定 */
     animation: anime2 2s ease 0s;      /* アニメーション指定 */
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 30;
     animation-fill-mode: forwards;
 } 
@@ -112,35 +129,35 @@ img[name=doAnimeGreen] {
     margin: 0 auto;                 /* 要素中央揃え */
     position:  absolute;            /* 位置指定 */
     animation: anime2 2s ease 0s;      /* アニメーション指定 */
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 40;
     animation-fill-mode: forwards;
 } 
 #topImageBlack {
-    width: 25vw;
-    height: 10vh;
+    width: 100%;
+    height: 100%;
 }
 #topImageRed {
-    width: 25vw;
-    height: 10vh;
+    width: 100%;
+    height: 100%;
 }
 #topImageWhite {
-    width: 25vw;
-    height: 10vh;
+    width: 100%;
+    height: 100%;
 }
 #topImageYerrow {
-    width: 25vw;
-    height: 10vh;
+    width: 100%;
+    height: 100%;
 }
 .gnav {
     display: flex;
-    height: 10vh;
-    width: 100vw;
+    height: 10%;
+    width: 100%;
     margin: 0 auto;
 }
 .gnav > li {
-    width: 25vw;
+    width: 25%;
 }
 .gnav li{
     position: relative;
@@ -148,24 +165,29 @@ img[name=doAnimeGreen] {
 }
 .gnav li img{
     display: block;
-    height: 10vh;
-    width: 25vw;
+    height: 100%;
+    width: 100%;
 }
 .gnav li ul {
     padding: 0;
-    height: 0;
+    height: 0%;
 }
 .gnav li li {
-    height: 0;
+    height: 0%;
     overflow: hidden;
     transition: .5s;
 }
 .gnav li li img {
     border-top: 1px solid #eee;
-    width: 25vw;
+    width: 100%;
 }
+.gnav li:hover > ul {
+    height: 100%;
+    overflow: visible;
+}
+
 .gnav li:hover > ul > li {
-    height: 10vh;
+    height: 100%;
     overflow: visible;
 }
 .gnav li li:hover img {
@@ -210,6 +232,8 @@ li[name=doAnimeBlack] {
     animation: anime3 2s ease 0s;      /* アニメーション指定 */
     animation-fill-mode: forwards;
     z-index: 50;
+    height: 10%;
+    width:25%;
 } 
 
 li[name=doAnimeRed] {
@@ -219,6 +243,8 @@ li[name=doAnimeRed] {
     animation: anime4 2s ease 0s;      /* アニメーション指定 */
     z-index: 60;
     animation-fill-mode: forwards;
+    height: 10%;
+    width:25%;
 }
 
 li[name=doAnimeWhite] {
@@ -228,6 +254,8 @@ li[name=doAnimeWhite] {
     animation: anime5 2s ease 0s;      /* アニメーション指定 */
     z-index: 50;
     animation-fill-mode: forwards;
+    height: 10%;
+    width:25%;
 } 
 
 li[name=doAnimeYerrow] {
@@ -237,9 +265,24 @@ li[name=doAnimeYerrow] {
     animation: anime6 2s ease 0s;      /* アニメーション指定 */
     z-index: 50;
     animation-fill-mode: forwards;
+    height: 10%;
+    width:25%;
 } 
-
-
+.shrink{
+    transform: scale(0.7,0.7);
+    transition-duration: 0.5s;
+}
+#top {
+    overflow: hidden;
+}
+.pageLeft {
+    position: absolute;
+    animation: pageLeft 5s linear 0s;      /* アニメーション指定 */
+    animation-fill-mode: forwards;
+}
+#secondPage{
+    float: left;
+}
 @keyframes anime1 {
     0% {
         opacity:  0;                /* 透明度指定 */
@@ -306,5 +349,22 @@ li[name=doAnimeYerrow] {
         opacity:  1;                /* 透明度指定 */
         left: 50%;                     /* 位置指定 */
         top: 0;
+    }
+}
+@keyframes pageLeft {
+    0% {
+        left:0;
+        width: 100%;
+        height: 100%;
+    }
+    50% {
+        width: 100%;
+        height: 100%;
+        left: -50%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        left: -100%;
     }
 }

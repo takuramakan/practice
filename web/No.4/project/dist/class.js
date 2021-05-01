@@ -25,6 +25,7 @@ var Person = /** @class */ (function () {
     };
     Person.prototype.greeting = function () {
         console.log("Hello! My name is " + this.name + ". I am " + this.age + " years old.");
+        this.explainJob();
     };
     /*下の定義に省略できる
     name : string;
@@ -39,14 +40,19 @@ var Person = /** @class */ (function () {
     return Person;
 }());
 //Personクラス継承したクラス
-var Teature = /** @class */ (function (_super) {
-    __extends(Teature, _super);
-    function Teature(name, age, subject) {
+var Teacher = /** @class */ (function (_super) {
+    __extends(Teacher, _super);
+    //privateにすることでコンストラクタを外部から使えないようにする
+    //(外からnewできない)一つしか定義できない仕組みにしたい→シングルトンパターン
+    function Teacher(name, age, subject) {
         var _this = _super.call(this, name, age) || this;
         _this.subject = subject;
         return _this;
     }
-    Object.defineProperty(Teature.prototype, "getSubject", {
+    Teacher.prototype.explainJob = function () {
+        console.log("I am a teacher and I teach " + this.subject + ".");
+    };
+    Object.defineProperty(Teacher.prototype, "getSubject", {
         //ゲッターとセッターの名前を同じにしておけば、セッターの引数はゲッターのreturnから型推論する
         get: function () {
             if (!this.subject) {
@@ -57,22 +63,26 @@ var Teature = /** @class */ (function (_super) {
         enumerable: false,
         configurable: true
     });
-    Object.defineProperty(Teature.prototype, "setSubject", {
+    Object.defineProperty(Teacher.prototype, "setSubject", {
         set: function (subject) {
             this.subject = subject;
         },
         enumerable: false,
         configurable: true
     });
-    Teature.prototype.greeting = function () {
-        console.log("Hello! My name is " + this.name + ". I am " + this.age + " years old. I teach " + this.subject + ".");
+    Teacher.getInstance = function () {
+        if (Teacher.instance)
+            return Teacher.instance;
+        Teacher.instance = new Teacher('テーチャーだ', 33, 'math');
+        return Teacher.instance;
     };
-    return Teature;
+    return Teacher;
 }(Person));
-var teature = new Teature('テーチャーだ', 33, 'math');
-teature.setSubject = 'unko';
-teature.greeting();
-console.log(Teature.species);
+var teacher = Teacher.getInstance();
+//const teacher = new Teacher('テーチャーだ',33,'math');
+//teacher.setSubject = 'unko';
+teacher.greeting();
+//console.log(Teacher.species);
 /*
 const quill = new Person('Quill',38);
 //プライベートにはアクセスできない

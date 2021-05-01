@@ -1,4 +1,4 @@
-class Person {
+abstract class Person {
     /*下の定義に省略できる
     name : string;
     //プライベート　外からアクセスできない
@@ -18,11 +18,17 @@ class Person {
     }
     greeting(this: Person) {
         console.log(`Hello! My name is ${this.name}. I am ${this.age} years old.`);
+        this.explainJob();
     }
+    abstract explainJob():void;
 }
 
 //Personクラス継承したクラス
-class Teature extends Person{
+class Teacher extends Person{
+    private static instance: Teacher;
+    explainJob(){
+        console.log(`I am a teacher and I teach ${this.subject}.`);
+    }
     //ゲッターとセッターの名前を同じにしておけば、セッターの引数はゲッターのreturnから型推論する
     get getSubject() :string {
         if (!this.subject) {
@@ -35,17 +41,22 @@ class Teature extends Person{
         this.subject = subject;
     }
 
-    constructor(name: string,age:number,private subject:string){
+    //privateにすることでコンストラクタを外部から使えないようにする
+    //(外からnewできない)一つしか定義できない仕組みにしたい→シングルトンパターン
+    private constructor(name: string,age:number,private subject:string){
         super(name,age);
     }
-    greeting() {
-        console.log(`Hello! My name is ${this.name}. I am ${this.age} years old. I teach ${this.subject}.`);
+    static getInstance() {
+        if(Teacher.instance)return Teacher.instance;
+        Teacher.instance = new Teacher('テーチャーだ',33,'math');
+        return Teacher.instance
     }
 }
-const teature = new Teature('テーチャーだ',33,'math');
-teature.setSubject = 'unko';
-teature.greeting();
-console.log(Teature.species);
+const teacher = Teacher.getInstance();
+//const teacher = new Teacher('テーチャーだ',33,'math');
+//teacher.setSubject = 'unko';
+teacher.greeting();
+//console.log(Teacher.species);
 
 /*
 const quill = new Person('Quill',38);

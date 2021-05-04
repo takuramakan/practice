@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 function App() {
   const profiles = [
@@ -21,7 +22,13 @@ const User = (props) => {
   return <div>Hi, I am {props.name}! and {props.age} years old!</div>
 }
 
-User.defaultProps = {
-  age: 1
+// User.defaultProps = {
+//   age: 1
+// }
+
+User.PropTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number.isRequired
+
 }
 export default App;

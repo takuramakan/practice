@@ -1,0 +1,17 @@
+◆Redux
+    ●Action
+        JavaScriptのオブジェクトのこと
+        オブジェクト内部で
+        type、typeの値をもつ。typeの値はユニークでないといけない
+
+        Actionを返す関数をActionCreaterという
+
+    ●reducer
+        Actionが発生した時に、Actionに組み込まれているtypeの
+        状態を変更する。今回は状態をstateとする。
+
+        それぞれの項目の状態を持つjsファイル（reducer）を作成
+        →すべてのreducerを結合したreducer(今回だとindex.js)を作成する
+        　reducerの結合はcombineReducerを使用する。
+
+

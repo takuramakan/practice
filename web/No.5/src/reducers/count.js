@@ -1,5 +1,8 @@
+//countの状態を保持するreducer
+
 import { INCREMENT, DECREMENT } from '../actions'
 
+//countの状態の初期値
 const initialState = { value: 0 }
 
 export default (state = initialState, action) => {

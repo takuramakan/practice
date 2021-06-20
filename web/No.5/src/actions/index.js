@@ -1,13 +1,15 @@
+import axios from 'axios'
+
 //reducerでも使うため、定数定義
-export const INCREMENT = 'INCREMENT'
-export const DECREMENT = 'DECREMENT'
+export const READ_EVENTS = 'READ_EVENTS'
+
+const ROOT_URL = 'https://udemy-utils.herokuapp.com/api/v1'
+const QUERYSTRING = '?token=token123'
 
 //ActionCreater:アクションを返す関数
-export const increment = () => ({
-        type: 'INCREMENT'
-})
-
-export const decrement = () => ({
-    type: 'DECREMENT'
-})
+export const readEvents = () => async dispatch =>{
+    const response = await axios.get(`${ROOT_URL}/events${QUERYSTRING}`)
+    console.log(response)
+    dispatch({type: READ_EVENTS, response})
+}
 

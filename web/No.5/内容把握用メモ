@@ -14,4 +14,6 @@
         →すべてのreducerを結合したreducer(今回だとindex.js)を作成する
         　reducerの結合はcombineReducerを使用する。
 
+    ↓これをみるとわかりやすい
+    https://qiita.com/soarflat/items/bd319695d156654bbe86
 

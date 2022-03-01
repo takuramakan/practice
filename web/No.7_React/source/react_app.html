@@ -19,13 +19,13 @@
     <script type="text/babel">
         let dom = document.querySelector('#root')
 
-        let title = "新タイトル"
-        let message = "新しいメッセージです。"
+        let message = "新タイトル"
+        let link = "http://google.com"
 
         let el = (
-            <div classNmae="alert alert-bg-primary">
-                <h2>{title}</h2>
-                <p>{message}</p>
+            <div className="alert alert-bg-primary">
+                <h4>{message}</h4>
+                <h5><a href={link}>this is link!</a></h5>
             </div>
         )
         ReactDOM.render(el,dom)

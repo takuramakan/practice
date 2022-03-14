@@ -22,8 +22,8 @@
 
         //これが関数コンポーネント
         function Welcome(props) {
-            return <div className="alert alert-primary">
-                    <p className="h4">Hello React</p>
+            return <div className={props.alert}>
+                    <p className={props.fontSize}>Hello {props.name}</p>
             </div>
         }
 
@@ -31,7 +31,8 @@
         let el = (
             <div>
                 <h5 className="mb-4">{message}</h5>
-                <Welcome />
+                <Welcome name="Taro" fontSize='h2' alert='alert alert-primary'/>
+                <Welcome name="Hanako" fontSize='h5' alert='alert alert-dark'/>
             </div>
         )
         ReactDOM.render(el,dom)

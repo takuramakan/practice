@@ -10,15 +10,18 @@
 <body>
     <h2>データをv-textで表示するサンプル</h2>
     <div id="app">
+        <p>{{myNumber}}</p>
         <p>{{myText}}</p>
-        <p v-text="myText"></p>
-        <p v-html="myText"></p>
+        <p>{{myBool}}</p>
     </div>
     <script>
         new Vue({
             el:"#app",
             data:{
-                myText:'<h1>Hello!!!</h1>'
+                //変数の型はjsと同じで勝手に判断するらしい
+                myNumber:500,
+                myText:'<h1>Hello!!!</h1>',
+                myBool:true
             }
         })
     </script>

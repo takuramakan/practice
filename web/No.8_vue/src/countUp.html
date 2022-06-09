@@ -8,16 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 </head>
 <body>
-    <h2>データをv-textで表示するサンプル</h2>
     <div id="app">
-        <img width="50%" src="../img/yohane1.jpg" alt="">直接指定
-        <img width="50%" v-bind:src="fileName" alt="">v-bindで指定
+        <p :style="{color: myColor}">文字色をv-bindで指定</p>
+        <p :style="{fontSize: mySize}">文字サイズをv-bindで指定</p>
+        <p :style="{backgroundColor: myBackColor}">背景色をv-bindで指定</p>
     </div>
     <script>
         new Vue({
             el:"#app",
             data:{
-                fileName:'../img/yohane1.jpg'
+                myColor:'red',
+                mySize:'200%',
+                myBackColor:'aqua'
             }
         })
     </script>

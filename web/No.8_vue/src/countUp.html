@@ -10,18 +10,14 @@
 <body>
     <h2>データをv-textで表示するサンプル</h2>
     <div id="app">
-        <p>{{myNumber * 2}}</p>
-        <p>{{myText.substr(0,2) + "だよ"}}</p>
-        <p>{{myBool}}</p>
+        <img width="50%" src="../img/yohane1.jpg" alt="">直接指定
+        <img width="50%" v-bind:src="fileName" alt="">v-bindで指定
     </div>
     <script>
         new Vue({
             el:"#app",
             data:{
-                //変数の型はjsと同じで勝手に判断するらしい
-                myNumber:500,
-                myText:'<h1>Hello!!!</h1>',
-                myBool:true
+                fileName:'../img/yohane1.jpg'
             }
         })
     </script>

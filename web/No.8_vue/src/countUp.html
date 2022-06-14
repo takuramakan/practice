@@ -9,17 +9,14 @@
 </head>
 <body>
     <div id="app">
-        <p :style="{color: myColor}">文字色をv-bindで指定</p>
-        <p :style="{fontSize: mySize}">文字サイズをv-bindで指定</p>
-        <p :style="{backgroundColor: myBackColor}">背景色をv-bindで指定</p>
+        <input v-model="myName" placeholder="お名前">
+        <p>私は{{myName}}です</p>
     </div>
     <script>
         new Vue({
             el:"#app",
             data:{
-                myColor:'red',
-                mySize:'200%',
-                myBackColor:'aqua'
+                myName:''
             }
         })
     </script>

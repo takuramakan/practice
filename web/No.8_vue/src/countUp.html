@@ -11,12 +11,47 @@
     <div id="app">
         <input v-model="myName" placeholder="お名前">
         <p>私は{{myName}}です</p>
+        <label>
+            <input type="checkbox" v-model="myCheck">
+            チェックボックスは、{{myCheck}}
+        </label>
+        <div>
+            <label><input type="checkbox" value="red" v-model="myChecks">赤</label>
+            <label><input type="checkbox" value="blue" v-model="myChecks">青</label>
+            <label><input type="checkbox" value="green" v-model="myChecks">緑</label>
+            選択されたのは{{myChecks}}
+        </div>
+        <div>
+            <label><input type="checkbox" v-model="myAgree">同意します</label>
+            <button v-bind:disabled="myAgree==false">送信</button>
+        </div>
+        <div>
+            <label><input type="radio" value="../img/yohane1.jpg" v-model="picked">赤</label>
+            <label><input type="radio" value="blue" v-model="picked">青</label>
+            <label><input type="radio" value="green" v-model="picked">緑</label>
+            {{picked}}を選択
+            <img v-bind:src="picked" alt="">
+        </div>
+        <div>
+            <select v-model="myColor" multiple>
+                <option disabled value="">非選択時</option>
+                <option>blue</option>
+                <option>green</option>
+                <option>red</option>
+            </select>
+            <p v-bind:style="{color:myColor}">{{myColor}}を選択</p>
+        </div>
     </div>
     <script>
         new Vue({
             el:"#app",
             data:{
-                myName:''
+                myName:'',
+                myCheck:false,
+                myChecks:[],
+                myAgree:false,
+                picked:'',
+                myColor:''
             }
         })
     </script>

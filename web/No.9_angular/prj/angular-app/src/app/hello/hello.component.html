@@ -2,22 +2,9 @@
     <h1>{{title}}</h1>
     <p>{{message}}</p>
     <p>TYPE:{{text1}}</p>
-    <input type="text" [(ngModel1)]="text1">
-    <!--
-    <p>price:{{price * 2}}</p>
-    <p>{{today()}}</p>
-    <p [class]="styleClass">{{message}}</p>
-    <button (click)="doClick()">Click</button>
-    <input type="text" #field1 (keyup)="doType(field1.value)">
-    <p *ngIf="visible" (click)="doClick()" class="red">
-        this is true message
-    </p>
-    <p *ngIf="visible==false" (click)="doClick()" class="red">
-        this is false message
-    </p>
-    <ul>
-        <li *ngFor="let itemmm of data">{{itemmm}}</li>
-    </ul>
-    -->
+    <input type="text" [(ngModel)]="text1" />
+    <p>TYPE:{{myControl.value}}</p>
+    <input type="text" [formControl]="myControl" />
+    <button (click)="doClick()">click</button>
 </div>
 

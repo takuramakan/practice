@@ -1,10 +1,25 @@
 <div id="body">
     <h1>{{title}}</h1>
     <p>{{message}}</p>
-    <p>TYPE:{{text1}}</p>
-    <input type="text" [(ngModel)]="text1" />
-    <p>TYPE:{{myControl.value}}</p>
-    <input type="text" [formControl]="myControl" />
-    <button (click)="doClick()">click</button>
+    <form [formGroup]="myControl" (ngSubmit)="onSubmit()">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" formControlName="name"></td>
+            </tr>
+            <tr>
+                <th>Mail</th>
+                <td><input type="text" formControlName="mail"></td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td><input type="number" formControlName="age"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="click"></td>
+            </tr>
+        </table>
+    </form>
 </div>
 
